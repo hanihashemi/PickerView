@@ -1,7 +1,7 @@
 <resources>
 
-    <string name="pickerview_cancel">cancel</string>
-    <string name="pickerview_submit">submit</string>
+    <string name="pickerview_cancel">Cancel</string>
+    <string name="pickerview_submit">Save</string>
     <string name="pickerview_year">y</string>
     <string name="pickerview_month">m</string>
     <string name="pickerview_day">day</string>
