@@ -134,7 +134,7 @@ public class MyWheelOptions<T> {
                         option2SelectedListener.onItemSelected(index);
                     }
                     if(option3SelectedListener != null){
-                        option3SelectedListener.onItemSelected(wv_option3);
+                        option3SelectedListener.onItemSelected(index);
                     }
                 }
             }
