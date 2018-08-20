@@ -13,6 +13,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.Toast;
 
 import com.bigkoo.pickerview.utils.PickerViewAnimateUtil;
 import com.bigkoo.pickerview.R;
@@ -116,6 +117,12 @@ public abstract class BasePickerView {
                 ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT
         ));
         overlayFrameLayout = (FrameLayout) rootView.findViewById(R.id.outmost_container);
+        overlayFrameLayout.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                dismiss();
+            }
+        });
         contentContainer = (ViewGroup) rootView.findViewById(R.id.content_container);
         contentContainer.setLayoutParams(params);
     }
